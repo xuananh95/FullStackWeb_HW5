@@ -1,0 +1,77 @@
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-form {
+    margin-top: 20px;
+    width: 60%;
+    max-width: 800px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+}
+
+.element-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.element{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label{
+    font-size: 14px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    width: 80%;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+select{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 20px;
+    min-width: 140px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(47, 47, 236);
+    color: white;
+    cursor: pointer;
+}
+.error-message {
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
